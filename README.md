@@ -1,4 +1,4 @@
-# 📚 Smart School
+# Smart School
 ### Interactive Educational Platform for Egyptian Secondary Students
 
 *Bridging traditional education with modern digital engagement*
@@ -11,7 +11,7 @@
 
 ---
 
-## 🌟 Overview
+##  Overview
 
 **Smart School** is a comprehensive, offline-capable Flutter application engineered to modernize the study experience for Egyptian secondary school students. The platform transforms conventional learning into an engaging, gamified journey — giving students access to rich multimedia content, interactive quizzes, and personalized progress tracking, all from their mobile device.
 
