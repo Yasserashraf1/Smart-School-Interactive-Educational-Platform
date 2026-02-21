@@ -1,0 +1,47 @@
+name: smart_school_demo_by_yasser_ashraf
+description: "Smart School Demo - Interactive educational app for Egyptian secondary school students"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  sqflite: ^2.4.2
+  path_provider: ^2.1.5
+  google_fonts: ^6.2.1
+  percent_indicator: ^4.2.3
+  confetti: ^0.8.0
+  smooth_page_indicator: ^1.2.0
+  youtube_player_flutter: ^9.1.1
+  url_launcher: ^6.2.0
+  shared_preferences: ^2.2.2
+  lottie: ^3.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/Icons8/icons8_1education_1100_1.png"
+  adaptive_icon_background: "#1565C0"
+  adaptive_icon_foreground: "assets/Icons8/icons8_1education_1100_1.png"
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/avatars/
+    - assets/lottie/
+    - assets/Icons8/

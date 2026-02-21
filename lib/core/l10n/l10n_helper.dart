@@ -1,0 +1,131 @@
+import 'package:flutter/material.dart';
+import 'app_localizations.dart';
+
+/// Helper to resolve ARB keys to localized strings at runtime.
+/// This maps the key strings stored in our data models to actual
+/// localized content from AppLocalizations.
+class L10nHelper {
+  static String resolve(BuildContext context, String key) {
+    final l10n = AppLocalizations.of(context)!;
+    final map = _buildMap(l10n);
+    return map[key] ?? key;
+  }
+
+  static Map<String, String> _buildMap(AppLocalizations l10n) {
+    return {
+      // Subject
+      'subjectIntegratedScience': l10n.subjectIntegratedScience,
+      'subjectDescription': l10n.subjectDescription,
+      // Lesson titles & descriptions
+      'lesson1Title': l10n.lesson1Title,
+      'lesson1Description': l10n.lesson1Description,
+      'lesson2Title': l10n.lesson2Title,
+      'lesson2Description': l10n.lesson2Description,
+      'lesson3Title': l10n.lesson3Title,
+      'lesson3Description': l10n.lesson3Description,
+      // Quiz
+      'quizTitle': l10n.quizTitle,
+      'quizDescription': l10n.quizDescription,
+      // Lesson 1 content
+      'lesson1Step1Title': l10n.lesson1Step1Title,
+      'lesson1Step1Content': l10n.lesson1Step1Content,
+      'lesson1Step2Title': l10n.lesson1Step2Title,
+      'lesson1Step2Content': l10n.lesson1Step2Content,
+      'lesson1Step3Title': l10n.lesson1Step3Title,
+      'lesson1Step3Content': l10n.lesson1Step3Content,
+      'lesson1CheckQ': l10n.lesson1CheckQ,
+      'lesson1CheckA1': l10n.lesson1CheckA1,
+      'lesson1CheckA2': l10n.lesson1CheckA2,
+      'lesson1CheckA3': l10n.lesson1CheckA3,
+      'lesson1CheckA4': l10n.lesson1CheckA4,
+      'lesson1CheckExplanation': l10n.lesson1CheckExplanation,
+      // Lesson 2 content
+      'lesson2Step1Title': l10n.lesson2Step1Title,
+      'lesson2Step1Content': l10n.lesson2Step1Content,
+      'lesson2Step2Title': l10n.lesson2Step2Title,
+      'lesson2Step2Content': l10n.lesson2Step2Content,
+      'lesson2Step3Title': l10n.lesson2Step3Title,
+      'lesson2Step3Content': l10n.lesson2Step3Content,
+      'lesson2CheckQ': l10n.lesson2CheckQ,
+      'lesson2CheckA1': l10n.lesson2CheckA1,
+      'lesson2CheckA2': l10n.lesson2CheckA2,
+      'lesson2CheckA3': l10n.lesson2CheckA3,
+      'lesson2CheckA4': l10n.lesson2CheckA4,
+      'lesson2CheckExplanation': l10n.lesson2CheckExplanation,
+      // Lesson 3 content
+      'lesson3Step1Title': l10n.lesson3Step1Title,
+      'lesson3Step1Content': l10n.lesson3Step1Content,
+      'lesson3Step2Title': l10n.lesson3Step2Title,
+      'lesson3Step2Content': l10n.lesson3Step2Content,
+      'lesson3Step3Title': l10n.lesson3Step3Title,
+      'lesson3Step3Content': l10n.lesson3Step3Content,
+      'lesson3CheckQ': l10n.lesson3CheckQ,
+      'lesson3CheckA1': l10n.lesson3CheckA1,
+      'lesson3CheckA2': l10n.lesson3CheckA2,
+      'lesson3CheckA3': l10n.lesson3CheckA3,
+      'lesson3CheckA4': l10n.lesson3CheckA4,
+      'lesson3CheckExplanation': l10n.lesson3CheckExplanation,
+      // Quiz questions
+      'quiz1Q': l10n.quiz1Q,
+      'quiz1A1': l10n.quiz1A1,
+      'quiz1A2': l10n.quiz1A2,
+      'quiz1A3': l10n.quiz1A3,
+      'quiz1A4': l10n.quiz1A4,
+      'quiz1Explanation': l10n.quiz1Explanation,
+      'quiz2Q': l10n.quiz2Q,
+      'quiz2A1': l10n.quiz2A1,
+      'quiz2A2': l10n.quiz2A2,
+      'quiz2A3': l10n.quiz2A3,
+      'quiz2A4': l10n.quiz2A4,
+      'quiz2Explanation': l10n.quiz2Explanation,
+      'quiz3Q': l10n.quiz3Q,
+      'quiz3A1': l10n.quiz3A1,
+      'quiz3A2': l10n.quiz3A2,
+      'quiz3A3': l10n.quiz3A3,
+      'quiz3A4': l10n.quiz3A4,
+      'quiz3Explanation': l10n.quiz3Explanation,
+      'quiz4Q': l10n.quiz4Q,
+      'quiz4A1': l10n.quiz4A1,
+      'quiz4A2': l10n.quiz4A2,
+      'quiz4A3': l10n.quiz4A3,
+      'quiz4A4': l10n.quiz4A4,
+      'quiz4Explanation': l10n.quiz4Explanation,
+      'quiz5Q': l10n.quiz5Q,
+      'quiz5A1': l10n.quiz5A1,
+      'quiz5A2': l10n.quiz5A2,
+      'quiz5A3': l10n.quiz5A3,
+      'quiz5A4': l10n.quiz5A4,
+      'quiz5Explanation': l10n.quiz5Explanation,
+      'quiz6Q': l10n.quiz6Q,
+      'quiz6A1': l10n.quiz6A1,
+      'quiz6A2': l10n.quiz6A2,
+      'quiz6A3': l10n.quiz6A3,
+      'quiz6A4': l10n.quiz6A4,
+      'quiz6Explanation': l10n.quiz6Explanation,
+      'quiz7Q': l10n.quiz7Q,
+      'quiz7A1': l10n.quiz7A1,
+      'quiz7A2': l10n.quiz7A2,
+      'quiz7A3': l10n.quiz7A3,
+      'quiz7A4': l10n.quiz7A4,
+      'quiz7Explanation': l10n.quiz7Explanation,
+      'quiz8Q': l10n.quiz8Q,
+      'quiz8A1': l10n.quiz8A1,
+      'quiz8A2': l10n.quiz8A2,
+      'quiz8A3': l10n.quiz8A3,
+      'quiz8A4': l10n.quiz8A4,
+      'quiz8Explanation': l10n.quiz8Explanation,
+      'quiz9Q': l10n.quiz9Q,
+      'quiz9A1': l10n.quiz9A1,
+      'quiz9A2': l10n.quiz9A2,
+      'quiz9A3': l10n.quiz9A3,
+      'quiz9A4': l10n.quiz9A4,
+      'quiz9Explanation': l10n.quiz9Explanation,
+      'quiz10Q': l10n.quiz10Q,
+      'quiz10A1': l10n.quiz10A1,
+      'quiz10A2': l10n.quiz10A2,
+      'quiz10A3': l10n.quiz10A3,
+      'quiz10A4': l10n.quiz10A4,
+      'quiz10Explanation': l10n.quiz10Explanation,
+    };
+  }
+}
